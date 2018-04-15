@@ -13,6 +13,7 @@
 		B7549DC2207DF4D6002E2AE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7549DC1207DF4D6002E2AE6 /* Assets.xcassets */; };
 		B7549DC5207DF4D6002E2AE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7549DC3207DF4D6002E2AE6 /* LaunchScreen.storyboard */; };
 		B7549DD0207DFF0C002E2AE6 /* CAGradientLayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7549DCF207DFF0C002E2AE6 /* CAGradientLayerExtension.swift */; };
+		B759E15E20833716009CCA32 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B759E15D20833716009CCA32 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B7549DC4207DF4D6002E2AE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7549DC6207DF4D6002E2AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7549DCF207DFF0C002E2AE6 /* CAGradientLayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAGradientLayerExtension.swift; sourceTree = "<group>"; };
+		B759E15D20833716009CCA32 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				B7549DCF207DFF0C002E2AE6 /* CAGradientLayerExtension.swift */,
+				B759E15D20833716009CCA32 /* UIColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				B7549DBD207DF4D6002E2AE6 /* ViewController.swift in Sources */,
 				B7549DD0207DFF0C002E2AE6 /* CAGradientLayerExtension.swift in Sources */,
 				B7549DBB207DF4D6002E2AE6 /* AppDelegate.swift in Sources */,
+				B759E15E20833716009CCA32 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
