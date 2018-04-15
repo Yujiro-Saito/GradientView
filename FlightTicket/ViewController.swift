@@ -8,16 +8,20 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
+class ViewController: UIViewController {
+    
+    private var gradientLayer = CAGradientLayer()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let caLayer = CAGradientLayer()
-        let gradientLayer: CAGradientLayer = caLayer.createGradient()
-        gradientLayer.frame = self.view.bounds
-        self.view.layer.insertSublayer(gradientLayer, at: 1)
+        createGradeint()
 
+    }
+    
+    private func createGradeint() {
+        gradientLayer.createGradientColor(layer: gradientLayer, vc: self)
     }
 
    

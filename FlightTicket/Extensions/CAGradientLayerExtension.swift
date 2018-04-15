@@ -11,13 +11,11 @@ import UIKit
 
 extension CAGradientLayer {
     
-    func createGradient() -> CAGradientLayer {
-        let startColor = UIColor(red: 0.07, green: 0.13, blue: 0.26, alpha: 1.0)
-        let endColor = UIColor(red: 0.54, green: 0.74, blue: 0.74, alpha: 1.0)
-        let gradientColors: [CGColor] = [startColor.cgColor, endColor.cgColor]
-        let gradientLayer: CAGradientLayer = CAGradientLayer()
-        gradientLayer.colors = gradientColors
+    func createGradientColor(layer: CAGradientLayer, vc: UIViewController) {
         
-        return gradientLayer
+        layer.frame = vc.view.bounds
+        layer.colors = [UIColor.red.cgColor, UIColor.yellow.cgColor, UIColor.blue.cgColor]
+        vc.view.layer.addSublayer(layer)
+        
     }
 }
