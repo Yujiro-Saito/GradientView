@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B72D65AB208701C500AD8E13 /* GradientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72D65AA208701C500AD8E13 /* GradientTableViewCell.swift */; };
 		B7549DBB207DF4D6002E2AE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7549DBA207DF4D6002E2AE6 /* AppDelegate.swift */; };
 		B7549DBD207DF4D6002E2AE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7549DBC207DF4D6002E2AE6 /* ViewController.swift */; };
 		B7549DC0207DF4D6002E2AE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7549DBE207DF4D6002E2AE6 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B72D65AA208701C500AD8E13 /* GradientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientTableViewCell.swift; sourceTree = "<group>"; };
 		B7549DB7207DF4D6002E2AE6 /* FlightTicket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightTicket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7549DBA207DF4D6002E2AE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7549DBC207DF4D6002E2AE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				B7549DBA207DF4D6002E2AE6 /* AppDelegate.swift */,
 				B7549DBC207DF4D6002E2AE6 /* ViewController.swift */,
+				B72D65AA208701C500AD8E13 /* GradientTableViewCell.swift */,
 				B7549DCE207DFB74002E2AE6 /* Extensions */,
 				B7549DBE207DF4D6002E2AE6 /* Main.storyboard */,
 				B7549DC1207DF4D6002E2AE6 /* Assets.xcassets */,
@@ -153,6 +156,7 @@
 				B7549DBD207DF4D6002E2AE6 /* ViewController.swift in Sources */,
 				B7549DD0207DFF0C002E2AE6 /* CAGradientLayerExtension.swift in Sources */,
 				B7549DBB207DF4D6002E2AE6 /* AppDelegate.swift in Sources */,
+				B72D65AB208701C500AD8E13 /* GradientTableViewCell.swift in Sources */,
 				B759E15E20833716009CCA32 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

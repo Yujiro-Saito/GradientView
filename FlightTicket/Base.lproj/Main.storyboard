@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Item-->
         <scene sceneID="tne-QT-ifu">
@@ -17,13 +22,85 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dif-LB-Y7W">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="83" id="JCU-c8-xdH" customClass="GradientTableViewCell" customModule="FlightTicket" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="83"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JCU-c8-xdH" id="ivb-y4-i2e">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="82.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfW-Zv-1aD">
+                                                    <rect key="frame" x="259" y="19" width="100" height="45"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="Nko-e8-7vp"/>
+                                                        <constraint firstAttribute="width" constant="100" id="Oci-Pr-wyT"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Accept">
+                                                        <color key="titleColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                </button>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z0D-tH-I58">
+                                                    <rect key="frame" x="15" y="6" width="71" height="71"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="71" id="I5Z-Ya-MNi"/>
+                                                        <constraint firstAttribute="height" constant="71" id="bPu-cJ-z4e"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hL-PA-7zQ">
+                                                    <rect key="frame" x="94" y="11" width="115" height="61"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="115" id="LdS-dv-omj"/>
+                                                        <constraint firstAttribute="height" constant="61" id="QCc-qh-b67"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" red="0.086274509803921567" green="0.62745098039215685" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="hfW-Zv-1aD" secondAttribute="bottom" constant="18.5" id="2yK-pb-uXO"/>
+                                                <constraint firstItem="Z0D-tH-I58" firstAttribute="leading" secondItem="ivb-y4-i2e" secondAttribute="leading" constant="15" id="5CE-Ow-Tn6"/>
+                                                <constraint firstItem="Z0D-tH-I58" firstAttribute="top" secondItem="ivb-y4-i2e" secondAttribute="top" constant="6" id="9hi-iY-Srq"/>
+                                                <constraint firstAttribute="bottom" secondItem="9hL-PA-7zQ" secondAttribute="bottom" constant="10.5" id="F7A-7Z-IuE"/>
+                                                <constraint firstItem="hfW-Zv-1aD" firstAttribute="top" secondItem="ivb-y4-i2e" secondAttribute="top" constant="19" id="OcG-59-omy"/>
+                                                <constraint firstAttribute="bottom" secondItem="Z0D-tH-I58" secondAttribute="bottom" constant="5.5" id="Qm2-3G-VdP"/>
+                                                <constraint firstItem="9hL-PA-7zQ" firstAttribute="leading" secondItem="Z0D-tH-I58" secondAttribute="trailing" constant="8" id="a1r-04-IQF"/>
+                                                <constraint firstItem="9hL-PA-7zQ" firstAttribute="top" secondItem="ivb-y4-i2e" secondAttribute="top" constant="11" id="aVY-PE-jha"/>
+                                                <constraint firstAttribute="trailing" secondItem="hfW-Zv-1aD" secondAttribute="trailing" constant="16" id="jb8-1X-ubz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="gradientButton" destination="hfW-Zv-1aD" id="kYb-9H-TnL"/>
+                                            <outlet property="gradientImage" destination="Z0D-tH-I58" id="EAS-wY-odx"/>
+                                            <outlet property="gradientLabel" destination="9hL-PA-7zQ" id="QVn-N2-Cq2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="dif-LB-Y7W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3lx-jo-TQY"/>
+                            <constraint firstItem="dif-LB-Y7W" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7rQ-fn-Z4k"/>
+                            <constraint firstItem="dif-LB-Y7W" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7s1-q1-PcM"/>
+                            <constraint firstItem="dif-LB-Y7W" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wTs-YF-UD4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Lmh-O3-WIO"/>
+                    <connections>
+                        <outlet property="gradientTable" destination="dif-LB-Y7W" id="P29-J2-wup"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="442" y="84"/>
+            <point key="canvasLocation" x="672.79999999999995" y="42.728635682158924"/>
         </scene>
     </scenes>
 </document>
